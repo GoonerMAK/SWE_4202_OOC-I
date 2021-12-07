@@ -8,7 +8,7 @@ namespace WindowsFormsApp7
 {
     internal class Research_class : Books
     {
-        int id;
+        public int id;
         public int quantity;
         int doi;
 

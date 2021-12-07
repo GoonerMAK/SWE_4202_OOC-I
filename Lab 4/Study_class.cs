@@ -8,7 +8,7 @@ namespace WindowsFormsApp7
 {
     internal class Study_class : Books 
     {
-        int id;
+        public int id;
         public int quantity;
         int isbn;
         

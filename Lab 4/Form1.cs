@@ -80,18 +80,23 @@ namespace WindowsFormsApp7
 
             foreach (Study_class book1 in studybooks)
             {
-                if (book1.quantity > 0)
+                if(book1.id == borrow_book)
                 {
-                    book1.quantity = book1.quantity - 1;
+                    if (book1.quantity > 0)
+                    {
+                        book1.quantity = book1.quantity - 1;
 
-                    MessageBox.Show("Succes!");
-                }
+                        MessageBox.Show("Succes!");
+                    }
 
-                else
-                {
-                    MessageBox.Show("Not enough books!");
+                    else
+                    {
+                        MessageBox.Show("Not enough books!");
 
-                }
+                    }
+                }    
+
+                
             }
         }
 
@@ -101,18 +106,23 @@ namespace WindowsFormsApp7
 
             foreach (Research_class article1 in articles)
             {
-                if (article1.quantity > 0)
+                if(article1.id == borrow_article)
                 {
-                    article1.quantity = article1.quantity - 1;
+                    if (article1.quantity > 0)
+                    {
+                        article1.quantity = article1.quantity - 1;
 
-                    MessageBox.Show("Succes!");
+                        MessageBox.Show("Succes!");
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("Not enough books!");
+
+                    }
                 }
-
-                else
-                {
-                    MessageBox.Show("Not enough books!");
-
-                }
+                
+                
             }
 
         }
