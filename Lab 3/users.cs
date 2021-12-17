@@ -11,7 +11,7 @@ namespace WindowsFormsApp6
         public int id;
         public string name;
         public int taken_id;
-        public int borrowed=0;
+        public int borrowed;
 
         public string getinfo_u()
         { 

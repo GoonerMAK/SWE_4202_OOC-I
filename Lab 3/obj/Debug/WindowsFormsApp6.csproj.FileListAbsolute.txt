@@ -9,3 +9,14 @@ C:\Users\hp\source\repos\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.csproj.Gene
 C:\Users\hp\source\repos\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.exe
 C:\Users\hp\source\repos\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.pdb
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\bin\Debug\WindowsFormsApp6.exe.config
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\bin\Debug\WindowsFormsApp6.exe
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\bin\Debug\WindowsFormsApp6.pdb
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.csproj.AssemblyReference.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.csproj.SuggestedBindingRedirects.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.Form1.resources
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.Properties.Resources.resources
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.csproj.GenerateResource.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.csproj.CoreCompileInputs.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.exe
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab 3\obj\Debug\WindowsFormsApp6.pdb
