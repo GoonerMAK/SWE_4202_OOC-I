@@ -8,9 +8,13 @@ namespace Lab_6
 {
     class User
     {
-        int id;
+        public int id;
         string name;
 
+        public User()
+        {
+
+        }
         public User(int id, string name)
         {
             this.id = id;   
@@ -29,23 +33,26 @@ namespace Lab_6
         int quantity;
         string cloth;
         string to_do;
+        public int number;
 
-        public Order(int quantity, string cloth, string to_do)
+
+        public Order(int quantity, string cloth, string to_do, int number)
         {
             this.quantity = quantity;
             this.cloth = cloth;
             this.to_do = to_do;
+            this.number = number;
         }
 
         public string get_order()
         {
-            return "Quantity:   " + quantity + "      " + "Type:   " + cloth + "        " + "To-Do:   "  + to_do;
+            return "\n" + "Quantity:   " + quantity + "      " + "Type:   " + cloth + "        " + "To-Do:   "  + to_do;
         }
     }
 
     class Owner
     {
-        int id;
+        public int id;
         int amount;
         string status;
 
@@ -58,7 +65,7 @@ namespace Lab_6
 
         public string get_owner()
         {
-            return "Order ID:   " + id + "    " + "Status:    " + status;
+            return "\nStatus:    " + status;
         }
 
     }
@@ -67,4 +74,6 @@ namespace Lab_6
     {
        
     }
+
+   
 }

@@ -43,7 +43,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.user_order_box = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.type_box = new System.Windows.Forms.TextBox();
+            this.quantity_box = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.current_balance_box = new System.Windows.Forms.TextBox();
             this.orders_listbox = new System.Windows.Forms.ListBox();
@@ -54,6 +54,9 @@
             this.status_combo_box = new System.Windows.Forms.ComboBox();
             this.clear = new System.Windows.Forms.Button();
             this.show_current_balance = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.id_for_details_box = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -123,7 +126,7 @@
             this.set_status.Name = "set_status";
             this.set_status.Size = new System.Drawing.Size(95, 41);
             this.set_status.TabIndex = 7;
-            this.set_status.Text = "ttrrrrrrrrrrrrrrrrrrrrrrrrrrrtfgvr";
+            this.set_status.Text = "Set Status ";
             this.set_status.UseVisualStyleBackColor = true;
             this.set_status.Click += new System.EventHandler(this.set_status_Click);
             // 
@@ -139,7 +142,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(555, 133);
+            this.label7.Location = new System.Drawing.Point(555, 136);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 9;
@@ -147,16 +150,18 @@
             // 
             // name_box
             // 
-            this.name_box.Location = new System.Drawing.Point(651, 130);
+            this.name_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_box.Location = new System.Drawing.Point(622, 130);
             this.name_box.Name = "name_box";
-            this.name_box.Size = new System.Drawing.Size(100, 22);
+            this.name_box.Size = new System.Drawing.Size(143, 30);
             this.name_box.TabIndex = 10;
             // 
             // user_id_box
             // 
-            this.user_id_box.Location = new System.Drawing.Point(651, 80);
+            this.user_id_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.user_id_box.Location = new System.Drawing.Point(622, 80);
             this.user_id_box.Name = "user_id_box";
-            this.user_id_box.Size = new System.Drawing.Size(100, 22);
+            this.user_id_box.Size = new System.Drawing.Size(129, 26);
             this.user_id_box.TabIndex = 11;
             // 
             // button1
@@ -185,12 +190,12 @@
             this.label9.TabIndex = 15;
             this.label9.Text = "Type";
             // 
-            // type_box
+            // quantity_box
             // 
-            this.type_box.Location = new System.Drawing.Point(1012, 156);
-            this.type_box.Name = "type_box";
-            this.type_box.Size = new System.Drawing.Size(100, 22);
-            this.type_box.TabIndex = 17;
+            this.quantity_box.Location = new System.Drawing.Point(1012, 156);
+            this.quantity_box.Name = "quantity_box";
+            this.quantity_box.Size = new System.Drawing.Size(100, 22);
+            this.quantity_box.TabIndex = 17;
             // 
             // label11
             // 
@@ -210,16 +215,17 @@
             // 
             // orders_listbox
             // 
+            this.orders_listbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.orders_listbox.FormattingEnabled = true;
-            this.orders_listbox.ItemHeight = 16;
-            this.orders_listbox.Location = new System.Drawing.Point(360, 297);
+            this.orders_listbox.ItemHeight = 20;
+            this.orders_listbox.Location = new System.Drawing.Point(398, 292);
             this.orders_listbox.Name = "orders_listbox";
-            this.orders_listbox.Size = new System.Drawing.Size(441, 212);
+            this.orders_listbox.Size = new System.Drawing.Size(441, 204);
             this.orders_listbox.TabIndex = 26;
             // 
             // see_details
             // 
-            this.see_details.Location = new System.Drawing.Point(868, 364);
+            this.see_details.Location = new System.Drawing.Point(875, 339);
             this.see_details.Name = "see_details";
             this.see_details.Size = new System.Drawing.Size(95, 66);
             this.see_details.TabIndex = 27;
@@ -239,19 +245,27 @@
             // 
             // clothes_combo_box
             // 
+            this.clothes_combo_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clothes_combo_box.FormattingEnabled = true;
             this.clothes_combo_box.Items.AddRange(new object[] {
             "Shirt",
             "Jacket",
             "Sheets",
-            "Pants"});
+            "Jeans",
+            "Trousers",
+            "T-shirt",
+            "Vest",
+            "Sweater",
+            "Blazer",
+            "Track-suit"});
             this.clothes_combo_box.Location = new System.Drawing.Point(991, 114);
             this.clothes_combo_box.Name = "clothes_combo_box";
-            this.clothes_combo_box.Size = new System.Drawing.Size(121, 24);
+            this.clothes_combo_box.Size = new System.Drawing.Size(121, 28);
             this.clothes_combo_box.TabIndex = 29;
             // 
             // do_combo_box
             // 
+            this.do_combo_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.do_combo_box.FormattingEnabled = true;
             this.do_combo_box.Items.AddRange(new object[] {
             "Iron",
@@ -259,26 +273,28 @@
             "Both"});
             this.do_combo_box.Location = new System.Drawing.Point(1118, 114);
             this.do_combo_box.Name = "do_combo_box";
-            this.do_combo_box.Size = new System.Drawing.Size(121, 24);
+            this.do_combo_box.Size = new System.Drawing.Size(121, 28);
             this.do_combo_box.TabIndex = 30;
             // 
             // status_combo_box
             // 
+            this.status_combo_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.status_combo_box.FormattingEnabled = true;
             this.status_combo_box.Items.AddRange(new object[] {
             "Pending",
             "Proccessing",
+            "It\'ll take time",
             "Cancelled",
             "Almost Done",
             "Delivered"});
             this.status_combo_box.Location = new System.Drawing.Point(89, 202);
             this.status_combo_box.Name = "status_combo_box";
-            this.status_combo_box.Size = new System.Drawing.Size(121, 24);
+            this.status_combo_box.Size = new System.Drawing.Size(121, 28);
             this.status_combo_box.TabIndex = 31;
             // 
             // clear
             // 
-            this.clear.Location = new System.Drawing.Point(868, 451);
+            this.clear.Location = new System.Drawing.Point(875, 430);
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(95, 66);
             this.clear.TabIndex = 32;
@@ -296,11 +312,39 @@
             this.show_current_balance.UseVisualStyleBackColor = true;
             this.show_current_balance.Click += new System.EventHandler(this.show_current_balance_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(931, 162);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 16);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Quantity";
+            // 
+            // id_for_details_box
+            // 
+            this.id_for_details_box.Location = new System.Drawing.Point(665, 253);
+            this.id_for_details_box.Name = "id_for_details_box";
+            this.id_for_details_box.Size = new System.Drawing.Size(100, 22);
+            this.id_for_details_box.TabIndex = 35;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(588, 256);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 16);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Order ID";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1261, 529);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.id_for_details_box);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.show_current_balance);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.status_combo_box);
@@ -311,7 +355,7 @@
             this.Controls.Add(this.orders_listbox);
             this.Controls.Add(this.current_balance_box);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.type_box);
+            this.Controls.Add(this.quantity_box);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.user_order_box);
             this.Controls.Add(this.button1);
@@ -352,7 +396,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox user_order_box;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox type_box;
+        private System.Windows.Forms.TextBox quantity_box;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox current_balance_box;
         private System.Windows.Forms.ListBox orders_listbox;
@@ -363,6 +407,9 @@
         private System.Windows.Forms.ComboBox status_combo_box;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button show_current_balance;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox id_for_details_box;
+        private System.Windows.Forms.Label label10;
     }
 }
 

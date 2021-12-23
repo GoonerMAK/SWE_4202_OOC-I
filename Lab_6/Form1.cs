@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab_6
@@ -19,8 +13,8 @@ namespace Lab_6
 
         List<Owner> owners = new List<Owner>();
 
-        int balance = 0;
-
+        int balance = 0, order_number = 0;
+        int flag = 0;
         public Form1()
         {
             InitializeComponent();
@@ -30,29 +24,40 @@ namespace Lab_6
         {
             int user_id = Convert.ToInt32(user_id_box.Text);
             string name = name_box.Text;
-
+            
             User user1 = new User(user_id, name);
-
             users.Add(user1);
 
+/*
+            flag += 1;
+            if(flag >= 1)
+            {
+                foreach (User user1 in users)
+                {
+                    if (user_id == user1.id)
+                    {
+                        orders_listbox.Items.Add(user1.get_user());
+                    }
+                }
+            }    
+*/
             MessageBox.Show("Done!");
         }
 
         private void place_order_Click(object sender, EventArgs e)
         {
-            int user_order_id = Convert.ToInt32(user_order_box.Text);
-            
-            
-            int quantity = Convert.ToInt32(type_box.Text);
+            order_number += 1;
+
+            int quantity = Convert.ToInt32(quantity_box.Text);
             string to_do = do_combo_box.Text;
             string cloth = clothes_combo_box.Text;
+            int number = order_number;
 
-            Order order1 = new Order(quantity, to_do, cloth);
+            Order order1 = new Order(quantity, cloth, to_do, number);
 
             orders.Add(order1);
 
-            MessageBox.Show("Done!");
-
+            MessageBox.Show("Your Order ID is " + order_number);
 
         }
 
@@ -60,26 +65,46 @@ namespace Lab_6
         {
             orders_listbox.Items.Clear();
 
-            for (int i = 0; i < orders.Count; i++)
-            {
-                orders_listbox.Items.Add(users[i].get_user());
+            int id = Convert.ToInt32(id_for_details_box.Text);
+            int user_order_id = Convert.ToInt32(user_order_box.Text);
 
-                Console.WriteLine("\n");
+            foreach (User user1 in users)
+            {
+                if(user_order_id == user1.id )
+                {
+                    orders_listbox.Items.Add(user1.get_user());
+                }
             }
 
-            for (int i = 0; i < orders.Count; i++)
+            foreach (Order order1 in orders)
             {
-                orders_listbox.Items.Add(orders[i].get_order());
-          
-                Console.WriteLine("\n");
+                if (id == order1.number)
+                {
+                    orders_listbox.Items.Add(order1.get_order());
+
+                    if(flag == 0)
+                    {
+                        orders_listbox.Items.Add("Status:    Pending");
+                    }
+                }
             }
 
-            for (int i = 0; i < orders.Count; i++)
+            foreach(Owner owner1 in owners)
             {
-                orders_listbox.Items.Add(owners[i].get_owner());
-
-                Console.WriteLine("\n");
+                if (id == owner1.id)
+                {
+                    orders_listbox.Items.Add(owner1.get_owner());
+                }
             }
+
+/*             for (int i = 0; i < orders.Count; i++)
+             {
+                if( (i+1) == id)
+                {
+                    orders_listbox.Items.Add(owners[i].get_owner());
+                }
+             }
+*/            
 
         }
 
@@ -90,13 +115,12 @@ namespace Lab_6
             string status = status_combo_box.Text;
 
             balance = balance + add_amount;
+            flag += 1;
 
             Owner owner1 = new Owner(order_id, add_amount, status);
-
             owners.Add(owner1);
 
             MessageBox.Show("Done!");
-
         }
 
         private void clear_Click(object sender, EventArgs e)
