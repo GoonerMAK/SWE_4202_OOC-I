@@ -1,0 +1,11 @@
+C:\Users\hp\source\repos\Lab_Final\bin\Debug\Lab_Final.exe.config
+C:\Users\hp\source\repos\Lab_Final\bin\Debug\Lab_Final.exe
+C:\Users\hp\source\repos\Lab_Final\bin\Debug\Lab_Final.pdb
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.Form1.resources
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.Properties.Resources.resources
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.exe
+C:\Users\hp\source\repos\Lab_Final\obj\Debug\Lab_Final.pdb
