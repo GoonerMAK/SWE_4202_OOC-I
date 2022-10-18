@@ -12,3 +12,17 @@ C:\Users\hp\source\repos\Lab 10\obj\Debug\Lab 10.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\Lab 10\obj\Debug\Lab 10.csproj.CopyComplete
 C:\Users\hp\source\repos\Lab 10\obj\Debug\Lab 10.exe
 C:\Users\hp\source\repos\Lab 10\obj\Debug\Lab 10.pdb
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\bin\Debug\Lab 10.exe.config
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\bin\Debug\Lab 10.exe
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\bin\Debug\Lab 10.pdb
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\bin\Debug\Newtonsoft.Json.dll
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\bin\Debug\Newtonsoft.Json.xml
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab 10.csproj.AssemblyReference.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab 10.csproj.SuggestedBindingRedirects.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab_10.Form1.resources
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab_10.Properties.Resources.resources
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab 10.csproj.GenerateResource.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab 10.csproj.CoreCompileInputs.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab 10.csproj.CopyComplete
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab 10.exe
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_10\Lab 10\obj\Debug\Lab 10.pdb

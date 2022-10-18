@@ -9,3 +9,14 @@ C:\Users\hp\source\repos\Lab_11\obj\Debug\Lab_11.csproj.GenerateResource.cache
 C:\Users\hp\source\repos\Lab_11\obj\Debug\Lab_11.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\Lab_11\obj\Debug\Lab_11.exe
 C:\Users\hp\source\repos\Lab_11\obj\Debug\Lab_11.pdb
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\bin\Debug\Lab_11.exe.config
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\bin\Debug\Lab_11.exe
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\bin\Debug\Lab_11.pdb
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.csproj.AssemblyReference.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.csproj.SuggestedBindingRedirects.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.Form1.resources
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.Properties.Resources.resources
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.csproj.GenerateResource.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.csproj.CoreCompileInputs.cache
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.exe
+D:\IUT 1-2\SWE 4202\SWE_4202_OOC-I\Lab_11\obj\Debug\Lab_11.pdb
